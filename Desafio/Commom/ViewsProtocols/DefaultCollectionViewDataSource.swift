@@ -1,6 +1,6 @@
 import UIKit
 
-class DefaultCollectionViewDataSource<Cell: ReusableCollectionViewCell, Model>: NSObject,UICollectionViewDataSource where Model == Cell.Model {
+class DefaultCollectionViewDataSource<Cell: ReusableCollectionViewCell, Model>: NSObject, UICollectionViewDataSource where Model == Cell.Model {
 
     var items: [Model] = []
 
@@ -25,7 +25,6 @@ class DefaultCollectionViewDataSource<Cell: ReusableCollectionViewCell, Model>: 
 
 protocol ReusableCollectionViewCell: UICollectionViewCell {
     associatedtype Model
-
     static var reuseIdentifier: String { get }
     func setup(with model: Model)
 }
