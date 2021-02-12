@@ -1,12 +1,19 @@
 import UIKit
 
 class DefaultCollectionViewDataSource<Cell: ReusableCollectionViewCell, Model>: NSObject, UICollectionViewDataSource where Model == Cell.Model {
-
-    var items: [Model] = []
+    private var collection: UICollectionView?
+    var items: [Model] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.collection?.reloadData()
+            }
+        }
+    }
 
     func attach(collection: UICollectionView) {
         collection.register(Cell.self, forCellWithReuseIdentifier: Cell.reuseIdentifier)
         collection.dataSource = self
+        self.collection = collection
     }
 
     // DATA SOURCE
