@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		AC0D572F25D6C47E00BA78BA /* DecodableAPIFethcerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D572E25D6C47E00BA78BA /* DecodableAPIFethcerTests.swift */; };
 		AC0D573225D6C55A00BA78BA /* DataFetcherServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D573125D6C55A00BA78BA /* DataFetcherServiceMock.swift */; };
-		ACE91ADE25D574D300CCD339 /* DefaultApiFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE91ADD25D574D300CCD339 /* DefaultApiFetcher.swift */; };
+		AC80873025D6EFB100795C50 /* DataFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80872F25D6EFB100795C50 /* DataFetcherService.swift */; };
+		ACE91ADE25D574D300CCD339 /* DecodableAPIFethcer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE91ADD25D574D300CCD339 /* DecodableAPIFethcer.swift */; };
 		ACF7734525D32A1F00E215EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7734425D32A1F00E215EE /* AppDelegate.swift */; };
 		ACF7734725D32A1F00E215EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7734625D32A1F00E215EE /* SceneDelegate.swift */; };
 		ACF7734E25D32A2000E215EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF7734D25D32A2000E215EE /* Assets.xcassets */; };
@@ -36,7 +37,8 @@
 /* Begin PBXFileReference section */
 		AC0D572E25D6C47E00BA78BA /* DecodableAPIFethcerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableAPIFethcerTests.swift; sourceTree = "<group>"; };
 		AC0D573125D6C55A00BA78BA /* DataFetcherServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherServiceMock.swift; sourceTree = "<group>"; };
-		ACE91ADD25D574D300CCD339 /* DefaultApiFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultApiFetcher.swift; sourceTree = "<group>"; };
+		AC80872F25D6EFB100795C50 /* DataFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
+		ACE91ADD25D574D300CCD339 /* DecodableAPIFethcer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableAPIFethcer.swift; sourceTree = "<group>"; };
 		ACF7734125D32A1F00E215EE /* Desafio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desafio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF7734425D32A1F00E215EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACF7734625D32A1F00E215EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,7 +102,8 @@
 		ACE91ADC25D574B700CCD339 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				ACE91ADD25D574D300CCD339 /* DefaultApiFetcher.swift */,
+				ACE91ADD25D574D300CCD339 /* DecodableAPIFethcer.swift */,
+				AC80872F25D6EFB100795C50 /* DataFetcherService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -307,10 +310,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACF7734525D32A1F00E215EE /* AppDelegate.swift in Sources */,
-				ACE91ADE25D574D300CCD339 /* DefaultApiFetcher.swift in Sources */,
+				ACE91ADE25D574D300CCD339 /* DecodableAPIFethcer.swift in Sources */,
 				ACF7737225D44C9D00E215EE /* MovieListCollectionView.swift in Sources */,
 				ACF7734725D32A1F00E215EE /* SceneDelegate.swift in Sources */,
 				ACF7736725D32F5900E215EE /* MovieListViewController.swift in Sources */,
+				AC80873025D6EFB100795C50 /* DataFetcherService.swift in Sources */,
 				ACF7736C25D3346C00E215EE /* ViewCode.swift in Sources */,
 				ACF7737025D44C7400E215EE /* MovieListCollectionCell.swift in Sources */,
 				ACF7737425D44CBE00E215EE /* Movie.swift in Sources */,
