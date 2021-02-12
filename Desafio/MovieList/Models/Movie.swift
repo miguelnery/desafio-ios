@@ -1,13 +1,11 @@
 import UIKit
 
 
-struct Movie {
-    let image: UIImage
+struct Movie: Codable {
+    let poster_path: String
     let title: String
-
-    init(image: UIImage = #imageLiteral(resourceName: "cat"), title: String = "bunda") {
-        self.image = image
-        self.title = title
-    }
 }
 
+struct MovieApiResults: Codable {
+    let results: [Movie]
+}
