@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0D572F25D6C47E00BA78BA /* DecodableAPIFethcerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D572E25D6C47E00BA78BA /* DecodableAPIFethcerTests.swift */; };
+		AC0D573225D6C55A00BA78BA /* DataFetcherServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D573125D6C55A00BA78BA /* DataFetcherServiceMock.swift */; };
+		ACE91ADE25D574D300CCD339 /* DefaultApiFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE91ADD25D574D300CCD339 /* DefaultApiFetcher.swift */; };
 		ACF7734525D32A1F00E215EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7734425D32A1F00E215EE /* AppDelegate.swift */; };
 		ACF7734725D32A1F00E215EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7734625D32A1F00E215EE /* SceneDelegate.swift */; };
 		ACF7734E25D32A2000E215EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF7734D25D32A2000E215EE /* Assets.xcassets */; };
 		ACF7735125D32A2000E215EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF7734F25D32A2000E215EE /* LaunchScreen.storyboard */; };
-		ACF7735C25D32A2100E215EE /* DesafioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7735B25D32A2100E215EE /* DesafioTests.swift */; };
 		ACF7736725D32F5900E215EE /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7736625D32F5900E215EE /* MovieListViewController.swift */; };
 		ACF7736A25D333F900E215EE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ACF7736925D333F900E215EE /* SnapKit */; };
 		ACF7736C25D3346C00E215EE /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7736B25D3346C00E215EE /* ViewCode.swift */; };
@@ -32,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC0D572E25D6C47E00BA78BA /* DecodableAPIFethcerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableAPIFethcerTests.swift; sourceTree = "<group>"; };
+		AC0D573125D6C55A00BA78BA /* DataFetcherServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherServiceMock.swift; sourceTree = "<group>"; };
+		ACE91ADD25D574D300CCD339 /* DefaultApiFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultApiFetcher.swift; sourceTree = "<group>"; };
 		ACF7734125D32A1F00E215EE /* Desafio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desafio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF7734425D32A1F00E215EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACF7734625D32A1F00E215EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +44,6 @@
 		ACF7735025D32A2000E215EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACF7735225D32A2100E215EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACF7735725D32A2100E215EE /* DesafioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACF7735B25D32A2100E215EE /* DesafioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioTests.swift; sourceTree = "<group>"; };
 		ACF7735D25D32A2100E215EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACF7736625D32F5900E215EE /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		ACF7736B25D3346C00E215EE /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
@@ -68,6 +72,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC0D572C25D6C46500BA78BA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D572D25D6C46800BA78BA /* API */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AC0D572D25D6C46800BA78BA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D573025D6C54400BA78BA /* Mokcs */,
+				AC0D572E25D6C47E00BA78BA /* DecodableAPIFethcerTests.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		AC0D573025D6C54400BA78BA /* Mokcs */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D573125D6C55A00BA78BA /* DataFetcherServiceMock.swift */,
+			);
+			path = Mokcs;
+			sourceTree = "<group>";
+		};
+		ACE91ADC25D574B700CCD339 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ACE91ADD25D574D300CCD339 /* DefaultApiFetcher.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		ACF7733825D32A1E00E215EE = {
 			isa = PBXGroup;
 			children = (
@@ -99,7 +136,7 @@
 		ACF7735A25D32A2100E215EE /* DesafioTests */ = {
 			isa = PBXGroup;
 			children = (
-				ACF7735B25D32A2100E215EE /* DesafioTests.swift */,
+				AC0D572C25D6C46500BA78BA /* Common */,
 				ACF7735D25D32A2100E215EE /* Info.plist */,
 			);
 			path = DesafioTests;
@@ -108,6 +145,7 @@
 		ACF7737525D44CE700E215EE /* MovieList */ = {
 			isa = PBXGroup;
 			children = (
+				ACF7736625D32F5900E215EE /* MovieListViewController.swift */,
 				ACF7737A25D44E3500E215EE /* Models */,
 				ACF7737725D44DC600E215EE /* Views */,
 			);
@@ -129,7 +167,6 @@
 		ACF7737725D44DC600E215EE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				ACF7736625D32F5900E215EE /* MovieListViewController.swift */,
 				ACF7736F25D44C7400E215EE /* MovieListCollectionCell.swift */,
 				ACF7737125D44C9D00E215EE /* MovieListCollectionView.swift */,
 			);
@@ -139,6 +176,7 @@
 		ACF7737825D44DD300E215EE /* Commom */ = {
 			isa = PBXGroup;
 			children = (
+				ACE91ADC25D574B700CCD339 /* API */,
 				ACF7737925D44DDE00E215EE /* ViewsProtocols */,
 			);
 			path = Commom;
@@ -217,6 +255,7 @@
 					};
 					ACF7735625D32A2100E215EE = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 						TestTargetID = ACF7734025D32A1E00E215EE;
 					};
 				};
@@ -268,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACF7734525D32A1F00E215EE /* AppDelegate.swift in Sources */,
+				ACE91ADE25D574D300CCD339 /* DefaultApiFetcher.swift in Sources */,
 				ACF7737225D44C9D00E215EE /* MovieListCollectionView.swift in Sources */,
 				ACF7734725D32A1F00E215EE /* SceneDelegate.swift in Sources */,
 				ACF7736725D32F5900E215EE /* MovieListViewController.swift in Sources */,
@@ -282,7 +322,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACF7735C25D32A2100E215EE /* DesafioTests.swift in Sources */,
+				AC0D572F25D6C47E00BA78BA /* DecodableAPIFethcerTests.swift in Sources */,
+				AC0D573225D6C55A00BA78BA /* DataFetcherServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +504,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9KAJM7V6T4;
 				INFOPLIST_FILE = DesafioTests/Info.plist;
@@ -474,6 +516,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = honey.DesafioTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Desafio.app/Desafio";
@@ -485,6 +528,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9KAJM7V6T4;
 				INFOPLIST_FILE = DesafioTests/Info.plist;
