@@ -1,4 +1,5 @@
 import UIKit
+import SDWebImage
 
 class MovieListCollectionCell: UICollectionViewCell {
     private let imageView = UIImageView()
@@ -16,14 +17,15 @@ class MovieListCollectionCell: UICollectionViewCell {
 }
 
 extension MovieListCollectionCell: ReusableCollectionViewCell {
-    typealias Model = Movie
+    typealias Model = MovieViewModel
     static var reuseIdentifier = "MovieListCollectionCell"
 
-    func setup(with model: Movie) {
+    func setup(with model: MovieViewModel) {
         DispatchQueue.main.async {
-            self.imageView.image = model.image
             self.titleLabel.text = model.title
         }
+        print(model.posterURL)
+        self.imageView.sd_setImage(with: model.posterURL)
     }
 }
 
@@ -40,11 +42,16 @@ extension MovieListCollectionCell: ViewCode {
             $0.trailing.equalToSuperview()
             $0.bottom.equalToSuperview().multipliedBy(0.7)
         }
-        titleLabel.snp.makeConstraints {
+        titleLabel.snp.makeConstraints {    
             $0.top.equalTo(imageView.snp.bottom)
             $0.leading.equalToSuperview()
             $0.trailing.equalToSuperview()
             $0.bottom.equalToSuperview()
         }
+    }
+
+    func additionalSetup() {
+        imageView.backgroundColor = .red
+        titleLabel.backgroundColor = .white
     }
 }
