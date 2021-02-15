@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		AC0D572F25D6C47E00BA78BA /* DecodableAPIFethcerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D572E25D6C47E00BA78BA /* DecodableAPIFethcerTests.swift */; };
 		AC0D573225D6C55A00BA78BA /* DataFetcherServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D573125D6C55A00BA78BA /* DataFetcherServiceMock.swift */; };
+		AC7D534E25DADE2800E99CF7 /* TMDBAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D534D25DADE2800E99CF7 /* TMDBAPI.swift */; };
+		AC7D535325DAF6A700E99CF7 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D535225DAF6A700E99CF7 /* MovieViewModel.swift */; };
 		AC80873025D6EFB100795C50 /* DataFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80872F25D6EFB100795C50 /* DataFetcherService.swift */; };
+		AC80873325D6F56700795C50 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = AC80873225D6F56700795C50 /* SDWebImage */; };
 		ACE91ADE25D574D300CCD339 /* DecodableAPIFethcer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE91ADD25D574D300CCD339 /* DecodableAPIFethcer.swift */; };
 		ACF7734525D32A1F00E215EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7734425D32A1F00E215EE /* AppDelegate.swift */; };
 		ACF7734725D32A1F00E215EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7734625D32A1F00E215EE /* SceneDelegate.swift */; };
@@ -37,6 +40,8 @@
 /* Begin PBXFileReference section */
 		AC0D572E25D6C47E00BA78BA /* DecodableAPIFethcerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableAPIFethcerTests.swift; sourceTree = "<group>"; };
 		AC0D573125D6C55A00BA78BA /* DataFetcherServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherServiceMock.swift; sourceTree = "<group>"; };
+		AC7D534D25DADE2800E99CF7 /* TMDBAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBAPI.swift; sourceTree = "<group>"; };
+		AC7D535225DAF6A700E99CF7 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		AC80872F25D6EFB100795C50 /* DataFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
 		ACE91ADD25D574D300CCD339 /* DecodableAPIFethcer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableAPIFethcer.swift; sourceTree = "<group>"; };
 		ACF7734125D32A1F00E215EE /* Desafio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desafio.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC80873325D6F56700795C50 /* SDWebImage in Frameworks */,
 				ACF7736A25D333F900E215EE /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +105,22 @@
 			path = Mokcs;
 			sourceTree = "<group>";
 		};
+		AC7D534C25DADE1D00E99CF7 /* TMDB */ = {
+			isa = PBXGroup;
+			children = (
+				AC7D534D25DADE2800E99CF7 /* TMDBAPI.swift */,
+			);
+			path = TMDB;
+			sourceTree = "<group>";
+		};
+		AC7D535125DAF69400E99CF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACF7737325D44CBE00E215EE /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ACE91ADC25D574B700CCD339 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +151,7 @@
 		ACF7734325D32A1F00E215EE /* Desafio */ = {
 			isa = PBXGroup;
 			children = (
+				AC7D534C25DADE1D00E99CF7 /* TMDB */,
 				ACF7737625D44D0E00E215EE /* App */,
 				ACF7737825D44DD300E215EE /* Commom */,
 				ACF7737525D44CE700E215EE /* MovieList */,
@@ -179,6 +202,7 @@
 		ACF7737825D44DD300E215EE /* Commom */ = {
 			isa = PBXGroup;
 			children = (
+				AC7D535125DAF69400E99CF7 /* Models */,
 				ACE91ADC25D574B700CCD339 /* API */,
 				ACF7737925D44DDE00E215EE /* ViewsProtocols */,
 			);
@@ -197,7 +221,7 @@
 		ACF7737A25D44E3500E215EE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				ACF7737325D44CBE00E215EE /* Movie.swift */,
+				AC7D535225DAF6A700E99CF7 /* MovieViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -220,6 +244,7 @@
 			name = Desafio;
 			packageProductDependencies = (
 				ACF7736925D333F900E215EE /* SnapKit */,
+				AC80873225D6F56700795C50 /* SDWebImage */,
 			);
 			productName = Desafio;
 			productReference = ACF7734125D32A1F00E215EE /* Desafio.app */;
@@ -274,6 +299,7 @@
 			mainGroup = ACF7733825D32A1E00E215EE;
 			packageReferences = (
 				ACF7736825D333F900E215EE /* XCRemoteSwiftPackageReference "SnapKit" */,
+				AC80873125D6F56700795C50 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = ACF7734225D32A1F00E215EE /* Products */;
 			projectDirPath = "";
@@ -309,6 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7D534E25DADE2800E99CF7 /* TMDBAPI.swift in Sources */,
 				ACF7734525D32A1F00E215EE /* AppDelegate.swift in Sources */,
 				ACE91ADE25D574D300CCD339 /* DecodableAPIFethcer.swift in Sources */,
 				ACF7737225D44C9D00E215EE /* MovieListCollectionView.swift in Sources */,
@@ -319,6 +346,7 @@
 				ACF7737025D44C7400E215EE /* MovieListCollectionCell.swift in Sources */,
 				ACF7737425D44CBE00E215EE /* Movie.swift in Sources */,
 				ACF7736E25D3379B00E215EE /* DefaultCollectionViewDataSource.swift in Sources */,
+				AC7D535325DAF6A700E99CF7 /* MovieViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +611,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AC80873125D6F56700795C50 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.4;
+			};
+		};
 		ACF7736825D333F900E215EE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -594,6 +630,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AC80873225D6F56700795C50 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC80873125D6F56700795C50 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
 		ACF7736925D333F900E215EE /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ACF7736825D333F900E215EE /* XCRemoteSwiftPackageReference "SnapKit" */;
