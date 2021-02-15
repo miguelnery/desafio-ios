@@ -1,9 +1,8 @@
 import UIKit
 
-
 struct Movie: Codable {
-    let poster_path: String
     let title: String
+    let posterPath: String
 }
 
 struct MovieApiResults: Codable {

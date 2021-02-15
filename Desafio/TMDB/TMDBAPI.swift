@@ -20,6 +20,11 @@ enum TMDBAPI {
 }
 
 extension TMDBAPI {
+    static let decoder: JSONDecoder = {
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        return decoder
+    }()
     private static let popularPath = "/3/movie/popular"
     private static let getImagePath = "/t/p/w500"
     private static let defaultLanguage = "pt-BR"

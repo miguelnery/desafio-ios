@@ -5,7 +5,7 @@ protocol MovieListPresenterType {
 class MovieListPresenter {
     private let fetcher: DecodableAPIFethcerType
 
-    init(fetcher: DecodableAPIFethcerType = DecodableAPIFethcer()) {
+    init(fetcher: DecodableAPIFethcerType = DecodableAPIFethcer(decoder: TMDBAPI.decoder)) {
         self.fetcher = fetcher
     }
 }
