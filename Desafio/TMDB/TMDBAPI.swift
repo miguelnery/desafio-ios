@@ -45,26 +45,12 @@ extension TMDBAPI {
         var components = URLComponents()
         components.scheme = "https"
         components.host = "image.tmdb.org"
-        
+
         return components
             .with(path: getImagePath + imagePath)
     }
 
     private static func makeLanguageQueryItem(language: String = defaultLanguage) -> URLQueryItem {
         return URLQueryItem(name: "language", value: language)
-    }
-}
-
-extension URLComponents {
-    func with(path: String) -> URLComponents {
-        var new = self
-        new.path = path
-        return new
-    }
-
-    func with(queryItems: [URLQueryItem]) -> URLComponents {
-        var new = self
-        new.queryItems = queryItems
-        return new
     }
 }
