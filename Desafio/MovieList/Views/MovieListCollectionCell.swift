@@ -24,7 +24,6 @@ extension MovieListCollectionCell: ReusableCollectionViewCell {
         DispatchQueue.main.async {
             self.titleLabel.text = model.title
         }
-        print(model.posterURL)
         self.imageView.sd_setImage(with: model.posterURL)
     }
 }

@@ -1,11 +1,11 @@
 import Foundation
 
-struct MovieViewModel {
+struct MovieViewModel: Equatable {
     let title: String
     let posterURL: URL
 
     init(movie: Movie) {
         self.title = movie.title
-        self.posterURL = TMDBAPI.image(path: movie.poster_path).url
+        self.posterURL = TMDBAPI.image(path: movie.posterPath).url
     }
 }

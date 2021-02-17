@@ -1,6 +1,10 @@
 import Foundation
 
-class DecodableAPIFethcer<T: Decodable> {
+protocol DecodableAPIFethcerType {
+    func fetch<T: Decodable>(from url: URL, _ completion: @escaping (Result<T, Error>) -> Void)
+}
+
+class DecodableAPIFethcer {
     private let dataService: DataFetcherService
     private let decoder: JSONDecoder
 
@@ -10,8 +14,10 @@ class DecodableAPIFethcer<T: Decodable> {
         self.decoder = decoder
 
     }
+}
 
-    func fetch(from url: URL, _ completion: @escaping (Result<T, Error>) -> Void) {
+extension DecodableAPIFethcer: DecodableAPIFethcerType {
+    func fetch<T: Decodable>(from url: URL, _ completion: @escaping (Result<T, Error>) -> Void) {
         dataService.fetch(from: url) { result in
             if case .success(let data) = result,
                 let model = try? self.decoder.decode(T.self, from: data) {
