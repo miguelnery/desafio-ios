@@ -1,6 +1,6 @@
 import UIKit
 
-struct Movie: Codable {
+struct Movie: Codable, Equatable {
     let title: String
     let posterPath: String
 }

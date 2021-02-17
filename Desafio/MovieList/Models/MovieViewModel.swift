@@ -1,6 +1,6 @@
 import Foundation
 
-struct MovieViewModel {
+struct MovieViewModel: Equatable {
     let title: String
     let posterURL: URL
 
