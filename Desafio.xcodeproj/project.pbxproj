@@ -14,9 +14,16 @@
 		AC7D535625DB051C00E99CF7 /* URLComponents+urlBuilding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D535525DB051C00E99CF7 /* URLComponents+urlBuilding.swift */; };
 		AC80873025D6EFB100795C50 /* DataFetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC80872F25D6EFB100795C50 /* DataFetcherService.swift */; };
 		AC80873325D6F56700795C50 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = AC80873225D6F56700795C50 /* SDWebImage */; };
+		ACA6D0CE25DEC8B7000E76C4 /* honeyCache in Frameworks */ = {isa = PBXBuildFile; productRef = ACA6D0CD25DEC8B7000E76C4 /* honeyCache */; };
+		ACA6D0D025E007EE000E76C4 /* MovieViewModelAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6D0CF25E007EE000E76C4 /* MovieViewModelAdapter.swift */; };
+		ACA6D0D325E3F1FF000E76C4 /* UserDefaults+subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6D0D225E3F1FF000E76C4 /* UserDefaults+subscript.swift */; };
+		ACA6D0D525E3FE0C000E76C4 /* hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA6D0D425E3FE0C000E76C4 /* hue.swift */; };
+		ACCDFE2725EEEF2F00BEB4A5 /* hoNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = ACCDFE2625EEEF2F00BEB4A5 /* hoNetwork */; };
+		ACCDFE2925F00E3000BEB4A5 /* hue2.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDFE2825F00E3000BEB4A5 /* hue2.swift */; };
 		ACDF864925DB152100B00726 /* MovieListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDF864825DB152100B00726 /* MovieListPresenter.swift */; };
 		ACDF864C25DB18E400B00726 /* MovieListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDF864B25DB18E400B00726 /* MovieListPresenterTests.swift */; };
 		ACDF864F25DB191E00B00726 /* DecodableAPIFethcerTypeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDF864E25DB191E00B00726 /* DecodableAPIFethcerTypeMock.swift */; };
+		ACDF868125DD572100B00726 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDF868025DD572100B00726 /* MovieDetailsViewController.swift */; };
 		ACE91ADE25D574D300CCD339 /* DecodableAPIFethcer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE91ADD25D574D300CCD339 /* DecodableAPIFethcer.swift */; };
 		ACF7734525D32A1F00E215EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7734425D32A1F00E215EE /* AppDelegate.swift */; };
 		ACF7734725D32A1F00E215EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF7734625D32A1F00E215EE /* SceneDelegate.swift */; };
@@ -48,9 +55,14 @@
 		AC7D535225DAF6A700E99CF7 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		AC7D535525DB051C00E99CF7 /* URLComponents+urlBuilding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+urlBuilding.swift"; sourceTree = "<group>"; };
 		AC80872F25D6EFB100795C50 /* DataFetcherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetcherService.swift; sourceTree = "<group>"; };
+		ACA6D0CF25E007EE000E76C4 /* MovieViewModelAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModelAdapter.swift; sourceTree = "<group>"; };
+		ACA6D0D225E3F1FF000E76C4 /* UserDefaults+subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+subscript.swift"; sourceTree = "<group>"; };
+		ACA6D0D425E3FE0C000E76C4 /* hue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hue.swift; sourceTree = "<group>"; };
+		ACCDFE2825F00E3000BEB4A5 /* hue2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hue2.swift; sourceTree = "<group>"; };
 		ACDF864825DB152100B00726 /* MovieListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenter.swift; sourceTree = "<group>"; };
 		ACDF864B25DB18E400B00726 /* MovieListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListPresenterTests.swift; sourceTree = "<group>"; };
 		ACDF864E25DB191E00B00726 /* DecodableAPIFethcerTypeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableAPIFethcerTypeMock.swift; sourceTree = "<group>"; };
+		ACDF868025DD572100B00726 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		ACE91ADD25D574D300CCD339 /* DecodableAPIFethcer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableAPIFethcer.swift; sourceTree = "<group>"; };
 		ACF7734125D32A1F00E215EE /* Desafio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desafio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF7734425D32A1F00E215EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +86,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC80873325D6F56700795C50 /* SDWebImage in Frameworks */,
+				ACA6D0CE25DEC8B7000E76C4 /* honeyCache in Frameworks */,
+				ACCDFE2725EEEF2F00BEB4A5 /* hoNetwork in Frameworks */,
 				ACF7736A25D333F900E215EE /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				AC7D535525DB051C00E99CF7 /* URLComponents+urlBuilding.swift */,
+				ACA6D0D225E3F1FF000E76C4 /* UserDefaults+subscript.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -154,6 +169,14 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		ACDF867E25DD56D300B00726 /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				ACDF868025DD572100B00726 /* MovieDetailsViewController.swift */,
+			);
+			path = MovieDetails;
+			sourceTree = "<group>";
+		};
 		ACE91ADC25D574B700CCD339 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +189,9 @@
 		ACF7733825D32A1E00E215EE = {
 			isa = PBXGroup;
 			children = (
+				ACCDFE2825F00E3000BEB4A5 /* hue2.swift */,
+				ACA6D0CF25E007EE000E76C4 /* MovieViewModelAdapter.swift */,
+				ACA6D0D425E3FE0C000E76C4 /* hue.swift */,
 				ACF7734325D32A1F00E215EE /* Desafio */,
 				ACF7735A25D32A2100E215EE /* DesafioTests */,
 				ACF7734225D32A1F00E215EE /* Products */,
@@ -186,6 +212,7 @@
 			children = (
 				ACF7737625D44D0E00E215EE /* App */,
 				ACF7737825D44DD300E215EE /* Commom */,
+				ACDF867E25DD56D300B00726 /* MovieDetails */,
 				ACF7737525D44CE700E215EE /* MovieList */,
 				AC7D534C25DADE1D00E99CF7 /* TMDB */,
 			);
@@ -281,6 +308,8 @@
 			packageProductDependencies = (
 				ACF7736925D333F900E215EE /* SnapKit */,
 				AC80873225D6F56700795C50 /* SDWebImage */,
+				ACA6D0CD25DEC8B7000E76C4 /* honeyCache */,
+				ACCDFE2625EEEF2F00BEB4A5 /* hoNetwork */,
 			);
 			productName = Desafio;
 			productReference = ACF7734125D32A1F00E215EE /* Desafio.app */;
@@ -336,6 +365,8 @@
 			packageReferences = (
 				ACF7736825D333F900E215EE /* XCRemoteSwiftPackageReference "SnapKit" */,
 				AC80873125D6F56700795C50 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				ACA6D0CC25DEC8B7000E76C4 /* XCRemoteSwiftPackageReference "honeyCache" */,
+				ACCDFE2525EEEF2F00BEB4A5 /* XCRemoteSwiftPackageReference "hoNetwork" */,
 			);
 			productRefGroup = ACF7734225D32A1F00E215EE /* Products */;
 			projectDirPath = "";
@@ -374,10 +405,14 @@
 				AC7D534E25DADE2800E99CF7 /* TMDBAPI.swift in Sources */,
 				ACDF864925DB152100B00726 /* MovieListPresenter.swift in Sources */,
 				ACF7734525D32A1F00E215EE /* AppDelegate.swift in Sources */,
+				ACA6D0D025E007EE000E76C4 /* MovieViewModelAdapter.swift in Sources */,
 				ACE91ADE25D574D300CCD339 /* DecodableAPIFethcer.swift in Sources */,
+				ACA6D0D325E3F1FF000E76C4 /* UserDefaults+subscript.swift in Sources */,
 				AC7D535625DB051C00E99CF7 /* URLComponents+urlBuilding.swift in Sources */,
+				ACDF868125DD572100B00726 /* MovieDetailsViewController.swift in Sources */,
 				ACF7737225D44C9D00E215EE /* MovieListCollectionView.swift in Sources */,
 				ACF7734725D32A1F00E215EE /* SceneDelegate.swift in Sources */,
+				ACA6D0D525E3FE0C000E76C4 /* hue.swift in Sources */,
 				ACF7736725D32F5900E215EE /* MovieListViewController.swift in Sources */,
 				AC80873025D6EFB100795C50 /* DataFetcherService.swift in Sources */,
 				ACF7736C25D3346C00E215EE /* ViewCode.swift in Sources */,
@@ -385,6 +420,7 @@
 				ACF7737425D44CBE00E215EE /* Movie.swift in Sources */,
 				ACF7736E25D3379B00E215EE /* DefaultCollectionViewDataSource.swift in Sources */,
 				AC7D535325DAF6A700E99CF7 /* MovieViewModel.swift in Sources */,
+				ACCDFE2925F00E3000BEB4A5 /* hue2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,6 +695,22 @@
 				minimumVersion = 5.10.4;
 			};
 		};
+		ACA6D0CC25DEC8B7000E76C4 /* XCRemoteSwiftPackageReference "honeyCache" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/miguelnery/honeyCache";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+		ACCDFE2525EEEF2F00BEB4A5 /* XCRemoteSwiftPackageReference "hoNetwork" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/miguelnery/hoNetwork";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
 		ACF7736825D333F900E215EE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -674,6 +726,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AC80873125D6F56700795C50 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		ACA6D0CD25DEC8B7000E76C4 /* honeyCache */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACA6D0CC25DEC8B7000E76C4 /* XCRemoteSwiftPackageReference "honeyCache" */;
+			productName = honeyCache;
+		};
+		ACCDFE2625EEEF2F00BEB4A5 /* hoNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACCDFE2525EEEF2F00BEB4A5 /* XCRemoteSwiftPackageReference "hoNetwork" */;
+			productName = hoNetwork;
 		};
 		ACF7736925D333F900E215EE /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
